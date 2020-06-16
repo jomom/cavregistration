@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+!important;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+/*.bg-dark {
+    background-color: #343a40!important;
+    height: 80px;
+    font-size: 14px;*
+    line-height: 18px;
+    //color: #7c3d82;
+}*/
+a.nav-item.nav-link.d-block.d-sm-none {
+    border: 1px solid;
+    border-width: 0px 0.5px 0px 0.5px;
+!important;
+    border-color: rgba(255, 255, 255, .1);
+}
+
+.fa-search:before {
+    content: "\f002";
+    color: rgba(255, 255, 255, .9);
+}
+
+
+.fa-shopping-cart:before {
+    content: "\f002";
+    color: rgba(255, 255, 255, .9);
+}
+img.pimage {
+    width: 150px;
+}
+
+a.pa {
+    display: inline-block;
+    height: 160px;
+}
+
+.row.products .p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+img.spi {
+    width: 100%;
+}
+
+ul.gallery li {
+    display: inline-block;
+    margin: 20px;
+    list-style: none;
+}
+
+img.cpi {
+    width: 100px;
+}
+
+table.alignmiddle td {
+    vertical-align: middle !important;
+}
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: #ececec;
+}
+.pp {
+    position: absolute;
+    left: -3000px;
+}
+
+
+.ajaxbg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255, .8);
+    z-index: 2;
+    display: none;
+}
+
+.ajaxinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.alert-error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+btn-double,btn-double:hover{
+    color: #7c3d82;
+    text-decoration: none;
+}

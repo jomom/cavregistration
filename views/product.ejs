@@ -1,0 +1,35 @@
+<% include _layouts/header %>
+
+<div class="row mb-3">
+    <div class="col-md-6 themed-grid-col">
+        <img class="spi" src="/product_images/<%= p.id %>/<%= p.image %>" alt="">
+    </div>
+    <div class="col-md-6 themed-grid-col">
+        <div class="pb-3">
+            <h4 class="page-header"><%= p.title %></h4>
+            <p><%= p.desc %></p>
+        </div>
+        <div class="row">
+            <div class="col-md-6 ">
+                <button class="btn btn-light"  >
+                    <a href="/cart/add/<%= p.slug %>">ADD TO CART</a>
+                </button>
+            </div>
+            <div class="col-md-6 themed-grid-col"><b>Current Price</b>  <p>Ksh<%= parseFloat(p.price).toFixed(2) %></p></div>
+        </div>
+    </div>
+    <div class="row"><ul class="gallery">
+            <% galleryImages.forEach(function(image){ %>
+                <% if (image != "thumbs") { %>
+                    <li>
+                        <a data-fancybox="gallery" href="/product_images/<%= p.id %>/gallery/<%= image %>">
+                            <img src="/product_images/<%= p.id %>/gallery/thumbs/<%= image %>" alt="">
+                        </a>
+                    </li>
+                <% } %>
+            <% }); %>
+        </ul></div>
+
+</div>
+
+<% include _layouts/footer %>
