@@ -1,5 +1,3 @@
-//DATABASE_URL=mongodb://localhost:27017/tooshdb
-
  module.exports ={
- 	MONGO_URI: process.env.MONGO_URI || 'mongodb://localhost:27017/tooshdb',
+	database:'mongodb+srv://admin:admin2021@cluster0.8ea37.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
  }
