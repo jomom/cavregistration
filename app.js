@@ -1,5 +1,8 @@
 /*jshint esversion: 6 */
 var express = require ('express');
+//dependencies
+var path = require ('path');
+
 
 //init app
 var app = express();
@@ -21,3 +24,17 @@ const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`));
 
+//view engine setup
+app.set ('views',path.join(__dirname, 'views'));
+app.set('view engine','ejs')
+
+//set public folder
+app.use(express.static(path.join(__dirname , 'public')));
+
+// Set global errors variable
+app.locals.errors = null;
+
+// index page
+app.get('/', function(req, res) {
+    res.render('main');
+  });

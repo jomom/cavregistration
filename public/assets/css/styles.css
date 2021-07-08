@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
 !important;
 }
 
-/* The hero image */
+
 .hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
 
-  /* Set a specific height */
+  
   height: 50%;
 
-  /* Position and center the image to scale nicely on all screens */
+  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,17 +28,10 @@ body {
   transform: translate(-50%, -50%);
   color: white;
 }
-/*.bg-dark {
-    background-color: #343a40!important;
-    height: 80px;
-    font-size: 14px;*
-    line-height: 18px;
-    //color: #7c3d82;
-}*/
+
 a.nav-item.nav-link.d-block.d-sm-none {
     border: 1px solid;
     border-width: 0px 0.5px 0px 0.5px;
-!important;
     border-color: rgba(255, 255, 255, .1);
 }
 
@@ -119,4 +111,37 @@ table.alignmiddle td {
 btn-double,btn-double:hover{
     color: #7c3d82;
     text-decoration: none;
+} */
+.formFooter,
+.formFooter-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  display: none;
+}
+.navbar-light .navbar-brand {
+  color: rgba(255, 255, 255, 0.9);
+}
+.navbar-light .navbar-toggler-icon {
+  /* background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e); */
+  background-color: #fff !important;
+  margin: 4px 4px 2px 2px;
+}
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgb(255, 255, 255);
+}
+#top-link {
+  color: rgba(255, 255, 255, 0.9);
+}
+#top-hero {
+    height: 400px;
+    width: auto;
+  background-color: antiquewhite !important;
+  background-image: url("../images/assets/nathaniel-tetteh-df6zCs6MCYQ-unsplash.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:#fff;
 }
